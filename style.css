@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(rgba(54, 55, 83, 0.95), rgba(54, 55, 83, 0.95)),
-              url('path-to-your-background-image.jpg');
+  background: linear-gradient(rgba(54, 55, 83, 0.9), rgba(54, 55, 83, 0.95)),
+              url('./img/excited-guruz.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
