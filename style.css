@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(rgba(54, 55, 83, 0.95), rgba(54, 55, 83, 0.95)),
+              url('path-to-your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgba(254, 254, 254, 1);
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+.hero {
+  background-image: url ('');
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(54, 55, 83, 1));
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  color: rgba(92, 210, 198, 1);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+  font-size: 1.8rem;
+  color: rgba(254, 254, 254, 1);
+  font-weight: 300;
+}
+
+.content-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.step {
+  background: rgba(3, 153, 139, 0.15);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(92, 210, 198, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  background: rgba(3, 153, 139, 0.2);
+  border-color: rgba(92, 210, 198, 0.3);
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: rgba(92, 210, 198, 1);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(92, 210, 198, 0.3);
+  border-radius: 2px;
+}
+
+h3 {
+  color: rgba(92, 210, 198, 1);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.call-to-action {
+  background: rgba(3, 153, 139, 0.25);
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.call-to-action::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(92, 210, 198, 0.5), transparent);
+}
+
+.play-store-badge {
+  display: inline-block;
+  margin-top: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.play-store-badge img {
+  height: 60px;
+  width: auto;
+}
+
+.play-store-badge:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .content-section {
+    padding: 2rem 1rem;
+  }
+  
+  .step {
+    padding: 1.5rem;
+  }
+  
+  .play-store-badge img {
+    height: 50px;
+  }
+}
